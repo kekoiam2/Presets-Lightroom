@@ -11,7 +11,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #6356FE;
+    background-color: #004d40; /* Cambiado a verde petróleo intenso */
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     text-align: center;
@@ -19,7 +19,6 @@ header {
     top: 0;
     transition: background-color 0.3s, padding 0.3s, height 0.3s;
     z-index: 1000;
-    background-image: linear-gradient(135deg, #1571F2, #1F1BBE);
 }
 
 header.shrink {
