@@ -11,7 +11,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #004030; /* Fondo verde petróleo más intenso para la sección de búsqueda */
+    background-color: #6356FE;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     text-align: center;
@@ -19,12 +19,12 @@ header {
     top: 0;
     transition: background-color 0.3s, padding 0.3s, height 0.3s;
     z-index: 1000;
-    background-image: linear-gradient(135deg, #004d40, #00382d); /* Gradiente verde petróleo intenso */
+    background-image: linear-gradient(135deg, #1571F2, #1F1BBE);
 }
 
 header.shrink {
     padding: 10px 0;
-    background-color: #00382d;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -160,15 +160,26 @@ main {
 }
 
 .search-icon {
-    position: fixed; /* Cambiado a 'fixed' para que siempre sea visible */
-    top: 20px; /* Posición desde la parte superior */
-    right: 30px; /* Posición desde la derecha */
-    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px; /* Ajusta la posición según sea necesario */
+    cursor: pointer; 
     z-index: 1100;
     transition: top 0.3s, right 0.3s;
 }
 
 .search-icon img {
-    width: 30px; /* Tamaño del ícono */
+    width: 30px; /* Ajusta el tamaño del icono según sea necesario */
     transition: width 0.3s;
 }
+
+header.shrink .search-icon {
+    top: 10px; /* Ajusta la posición cuando la barra de navegación se encoge */
+    right: 30px; /* Ajusta la posición cuando la barra de navegación se encoge */
+}
+
+header.shrink .search-icon img {
+    width: 20px; /* Ajusta el tamaño del ícono de búsqueda cuando la barra de navegación se encoge */
+}
+
+/*prueba*/
