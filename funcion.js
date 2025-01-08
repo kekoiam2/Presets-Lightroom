@@ -44,8 +44,10 @@ window.addEventListener('scroll', function() {
 
     if (currentScroll > lastScroll && currentScroll > 0) {
         header.classList.add('shrink');
+        header.style.backgroundColor = '#004d40';
     } else {
         header.classList.remove('shrink');
+        header.style.backgroundColor = '';
     }
 
     lastScroll = currentScroll <= 0 ? 0 : currentScroll;
@@ -102,4 +104,3 @@ function filterCards() {
     });
 }
 
-/*script mejorado*/
