@@ -160,26 +160,15 @@ main {
 }
 
 .search-icon {
-    position: absolute;
-    top: 20px;
-    right: 30px; /* Ajusta la posición según sea necesario */
-    cursor: pointer; 
+    position: fixed; /* Cambiado a 'fixed' para que siempre sea visible */
+    top: 20px; /* Posición desde la parte superior */
+    right: 30px; /* Posición desde la derecha */
+    cursor: pointer;
     z-index: 1100;
     transition: top 0.3s, right 0.3s;
 }
 
-search-icon img {
-    width: 30px; /* Ajusta el tamaño del icono según sea necesario */
+.search-icon img {
+    width: 30px; /* Tamaño del ícono */
     transition: width 0.3s;
 }
-
-header.shrink .search-icon {
-    top: 10px; /* Ajusta la posición cuando la barra de navegación se encoge */
-    right: 30px; /* Ajusta la posición cuando la barra de navegación se encoge */
-}
-
-header.shrink .search-icon img {
-    width: 20px; /* Ajusta el tamaño del ícono de búsqueda cuando la barra de navegación se encoge */
-}
-
-/*prueba*/
