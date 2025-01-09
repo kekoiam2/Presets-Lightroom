@@ -2,232 +2,40 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google" content="notranslate">
-  <title>Galeria de Preset Lightroom</title>
-  <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
+    <title>Galeria de Preset Lightroom</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-  <header>
+    <header>
         <h1>Presets Lightroom</h1>
         <div class="search-icon" onclick="toggleSearch()">
-    <img src="lupa de búsqueda/lupa.png" alt="Buscar">
-      </div>
-      
+            <img src="lupa de búsqueda/lupa.png" alt="Buscar">
+        </div>
         <div class="menu-container" id="menu-container">
             <input type="text" id="search-input" placeholder="Buscar Preset..." onkeyup="filterCards()">
         </div>
     </header>
+
+    <div class="social-media">
+        <a href="https://www.tiktok.com/@tu_usuario" target="_blank">
+            <img src="ruta/a/icono_tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/tu_usuario" target="_blank">
+            <img src="ruta/a/icono_instagram.png" alt="Instagram">
+        </a>
+    </div>
+
     <main id="card-container">
-        <div class="card show">
+        <div class="card">
             <h3>Old School</h3>
             <p class="status">Preset</p>
-            <img src="imagenes/Old School/Old school .jpg" alt="Filtro 1" data-original="imagenes\Old School\Original.jpg" data-filtered="imagenes/Old School/Old school .jpg">
+            <img src="imagenes/Old School/Old school .jpg" alt="Filtro 1" data-original="imagenes/Old School/Original.jpg" data-filtered="imagenes/Old School/Old school .jpg">
             <div class="button-group">
                 <a href="https://cuty.io/oldscholl" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card show">
-            <h3>Black Film</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Black Film/Black Film.jpg" data-original="imagenes/Black Film/Black Film Original.jpg" data-filtered="imagenes/Black Film/Black Film.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/blackfilm" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Blurry Film</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Blurry Film/Blurry Film.jpg" alt="Filtro 3" data-original="imagenes/Blurry Film/Blurry Film Original.jpg" data-filtered="imagenes/Blurry Film/Blurry Film.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/blurryfilm" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Horror Film</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Horror Film/Horror Film.jpg" alt="Filtro 4" data-original="imagenes/Horror Film/Horror Film Original.jpg" data-filtered="imagenes/Horror Film/Horror Film.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/horrorr" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Modern Vintage</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Modern Vintage/Modern Vintage.jpg" alt="Filtro 5" data-original="imagenes/Modern Vintage/Modern Vintage Original.jpg" data-filtered="imagenes/Modern Vintage/Modern Vintage.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/modernvinta" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Vintage</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Vintage/Vintage.jpg" alt="Filtro 6" data-original="imagenes/Vintage/Vintage Original.jpg" data-filtered="imagenes/Vintage/Vintage.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/vintagee" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Green Film</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Green Film/Green Film.jpg" alt="Filtro 7" data-original="imagenes/Green Film/Green Film Original.jpg" data-filtered="imagenes/Green Film/Green Film.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/greenfilm" target="blank">Descargar</a>
-            </div>
-        </div>
-        <!-- Las otras tarjetas -->
-        <div class="card">
-            <h3>Blvck Paris</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Blvck Paris/Blvck Paris.jpg" alt="Filtro 8" data-original="imagenes/Blvck Paris/Blvck Paris Original.jpg" data-filtered="imagenes/Blvck Paris/Blvck Paris.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/blackparis" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Film 1</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Film 1/Film 1.jpg" alt="Filtro 9" data-original="imagenes/Film 1/Film 1 Original.jpg" data-filtered="imagenes/Film 1/Film 1.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/film1" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Analog Film</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Analog Film/Analog Film.jpg" alt="Filtro 10" data-original="imagenes/Analog Film/Analog Film Original.jpg" data-filtered="imagenes/Analog Film/Analog Film.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/analogfilm" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Summer Time</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Summer Time/Summer Time.jpg" alt="Filtro 11" data-original="imagenes/Summer Time/Summer Time Original.jpg" data-filtered="imagenes/Summer Time/Summer Time.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/summertimee" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Retro 90's</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Retro 90's/Retro 90's.jpg" alt="Filtro 12" data-original="imagenes/Retro 90's/Retro 90's Original.jpg" data-filtered="imagenes/Retro 90's/Retro 90's.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/retro90" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Dream</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Dream/Dream.jpg" alt="Filtro 14" data-original="imagenes/Dream/Dream Original.jpg" data-filtered="imagenes/Dream/Dream.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/dreamm" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Bad Boys</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Bas Boys/Bad Boy.jpg" alt="Filtro 15" data-original="imagenes/Bas Boys/Bad Boys Original.jpg" data-filtered="imagenes/Bas Boys/Bad Boy.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/badboyss" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>War Cinematic</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/War Cinematic/War Cinematic.jpg" alt="Filtro 16" data-original="imagenes/War Cinematic/War Cinematic Original.jpg" data-filtered="imagenes/War Cinematic/War Cinematic.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/warcinematic" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Cars</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Cars/Cars.jpg" alt="Filtro 17" data-original="imagenes/Cars/Cars Original.jpg" data-filtered="imagenes/Cars/Cars.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/carss" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Sport Film</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Sport Film/Sport Film.jpg" alt="Filtro 18" data-original="imagenes/Sport Film/Sport Film Original.jpg" data-filtered="imagenes/Sport Film/Sport Film.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/sportfilm" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Kodak T-Max 400</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Kodak T-Max 400/Kodak t-max 400.jpg" alt="Filtro 19" data-original="imagenes/Kodak T-Max 400/Kodak t-max 400 Original.jpg" data-filtered="imagenes/Kodak T-Max 400/Kodak t-max 400.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/kodaktmax400" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Street</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Street/Street.jpg" alt="Filtro 20" data-original="imagenes/Street/Street Original.jpg" data-filtered="imagenes/Street/Street.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/streeet" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>CinesTill 800T</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/CinesTill 800T/CinesTill 800T.jpg" alt="Filtro 21" data-original="imagenes/CinesTill 800T/CinesTill 800T Original.jpg" data-filtered="imagenes/CinesTill 800T/CinesTill 800T.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/cinetill800t" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Anime Style</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Anime Style/Anime Style.jpg" alt="Filtro 22" data-original="imagenes/Anime Style/Anime Style Original.jpg" data-filtered="imagenes/Anime Style/Anime Style.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/animestyle" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Aesthetic Analog</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Asthethic Analog/Asthethic Analog.jpg" alt="Filtro 23" data-original="imagenes/Asthethic Analog/Asthethic Analog Original.jpg" data-filtered="imagenes/Asthethic Analog/Asthethic Analog.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/asthethicana" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Retrogram</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Retrogram/Retrogram.jpg" alt="Filtro 24" data-original="imagenes/Retrogram/Retrogram Original.jpg" data-filtered="imagenes/Retrogram/Retrogram.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/retrogram" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Macro</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Macro/Macro.jpg" alt="Filtro 25" data-original="imagenes/Macro/Macro Original.jpg" data-filtered="imagenes/Macro/Macro.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/macro2" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Kodak Disposable</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Kodak disposable/Kodak Disposable.jpg" alt="Filtro 26" data-original="imagenes/Kodak disposable/Kodak disposable Original.jpg" data-filtered="imagenes/Kodak disposable/Kodak Disposable.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/kodakdisposa" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Kodak Portra 400</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Kodak Portra 400/Kodak Portra 400.jpg" alt="Filtro 27" data-original="imagenes/Kodak Portra 400/Kodak Portra 400 Original.jpg" data-filtered="imagenes/Kodak Portra 400/Kodak Portra 400.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/kodakportra" target="blank">Descargar</a>
             </div>
         </div>
         <div class="card">
@@ -414,7 +222,6 @@
                 <a href="https://cuty.io/beachvibes" target="blank">Descargar</a>
             </div>
         </div>
-
         <div class="card">
             <h3>Night Vision</h3>
             <p class="status">Preset</p>
@@ -466,4 +273,5 @@
     </main>
     <script src="funcion.js"></script>
 </body>
+
 </html>
