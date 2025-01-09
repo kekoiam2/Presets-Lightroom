@@ -7,6 +7,79 @@
     <meta name="google" content="notranslate">
     <title>Galeria de Preset Lightroom</title>
     <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            width: 100%;
+            background-color: #004d40;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .social-media {
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 30px; /* Ajusta el tamaño de los íconos */
+            transition: transform 0.3s;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1); /* Efecto de hover */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .button-group a {
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button-group a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,10 +95,10 @@
 
     <div class="social-media">
         <a href="https://www.tiktok.com/@tu_usuario" target="_blank">
-            <img src="ruta/a/icono_tiktok.png" alt="TikTok">
+            <img src="ruta/a/icono_tiktok.png" alt="TikTok"> <!-- Cambia la ruta aquí -->
         </a>
         <a href="https://www.instagram.com/tu_usuario" target="_blank">
-            <img src="ruta/a/icono_instagram.png" alt="Instagram">
+            <img src="ruta/a/icono_instagram.png" alt="Instagram"> <!-- Cambia la ruta aquí -->
         </a>
     </div>
 
@@ -153,7 +226,7 @@
         <div class="card">
             <h3>Cinematic V2</h3>
             <p class="status">Preset</p>
-            <img src="imagenes/Cinematic V2/Cinematic V2.jpg" alt="Filtro 43" data-original="imagenes\Cinematic V2\Cinematic V2 Original.jpg" data-filtered="imagenes/Cinematic V2/Cinematic V2.jpg">
+            <img src="imagenes/Cinematic V2/Cinematic V2.jpg" alt="Filtro 43" data-original="imagenes/Cinematic V2/Cinematic V2 Original.jpg" data-filtered="imagenes/Cinematic V2/Cinematic V2.jpg">
             <div class="button-group">
                 <a href="https://cuty.io/cinematicv2" target="blank">Descargar</a>
             </div>
@@ -225,7 +298,7 @@
         <div class="card">
             <h3>Night Vision</h3>
             <p class="status">Preset</p>
-            <img src="imagenes/Night Vision/Night visión.jpg" alt="Filtro 52" data-original="imagenes\Night Vision\Night visión original.jpg" data-filtered="imagenes/Night Vision/Night visión.jpg">
+            <img src="imagenes/Night Vision/Night visión.jpg" alt="Filtro 52" data-original="imagenes/Night Vision/Night visión original.jpg" data-filtered="imagenes/Night Vision/Night visión.jpg">
             <div class="button-group">
                 <a href="https://cuty.io/NightVisionn" target="blank">Descargar</a>
             </div>
@@ -233,7 +306,7 @@
         <div class="card">
             <h3>Retrograde</h3>
             <p class="status">Preset</p>
-            <img src="imagenes/Retrograde/Retrograde.jpg" alt="Filtro 53" data-original="imagenes\Retrograde\Retrograde Original.jpg" data-filtered="imagenes/Retrograde/Retrograde.jpg">
+            <img src="imagenes/Retrograde/Retrograde.jpg" alt="Filtro 53" data-original="imagenes/Retrograde/Retrograde Original.jpg" data-filtered="imagenes/Retrograde/Retrograde.jpg">
             <div class="button-group">
                 <a href="https://cuty.io/retrograde" target="blank">Descargar</a>
             </div>
@@ -241,7 +314,7 @@
         <div class="card">
             <h3>iPhone Xr Cam</h3>
             <p class="status">Preset</p>
-            <img src="imagenes/Xr cam/Xr cam.jpg" alt="Filtro 54" data-original="imagenes\Xr cam\Xr cam original.jpg" data-filtered="imagenes/Xr cam/Xr cam.jpg">
+            <img src="imagenes/Xr cam/Xr cam.jpg" alt="Filtro 54" data-original="imagenes/Xr cam/Xr cam original.jpg" data-filtered="imagenes/Xr cam/Xr cam.jpg">
             <div class="button-group">
                 <a href="https://cuty.io/xrcam" target="blank">Descargar</a>
             </div>
@@ -249,7 +322,7 @@
         <div class="card">
             <h3>VSCO Film</h3>
             <p class="status">Preset</p>
-            <img src="imagenes/VSCO Film/VSCO Film.jpg" alt="Filtro 55" data-original="imagenes\VSCO Film\VSCO Film original.jpg" data-filtered="imagenes/VSCO Film/VSCO Film.jpg">
+            <img src="imagenes/VSCO Film/VSCO Film.jpg" alt="Filtro 55" data-original="imagenes/VSCO Film/VSCO Film original.jpg" data-filtered="imagenes/VSCO Film/VSCO Film.jpg">
             <div class="button-group">
                 <a href="https://cuty.io/vscofilm" target="blank">Descargar</a>
             </div>
@@ -257,21 +330,7 @@
         <div class="card">
             <h3>Night Out</h3>
             <p class="status">Preset</p>
-            <img src="imagenes/Night Out/Night out.jpg" alt="Filtro 56" data-original="imagenes\Night Out\Night out original.jpg" data-filtered="imagenes/Night Out/Night out.jpg">
+            <img src="imagenes/Night Out/Night out.jpg" alt="Filtro 56" data-original="imagenes/Night Out/Night out original.jpg" data-filtered="imagenes/Night Out/Night out.jpg">
             <div class="button-group">
-                <a href="https://cuty.io/nightout" target="blank">Descargar</a>
-            </div>
-        </div>
-        <div class="card">
-            <h3>Wildlife</h3>
-            <p class="status">Preset</p>
-            <img src="imagenes/Wildlife/Wildlife.jpg" alt="Filtro 57" data-original="imagenes\Wildlife\Wildlife original.jpg" data-filtered="imagenes/Wildlife/Wildlife.jpg">
-            <div class="button-group">
-                <a href="https://cuty.io/wildlife" target="blank">Descargar</a>
-            </div>
-        </div>
-    </main>
-    <script src="funcion.js"></script>
-</body>
-
-</html>
+                <
+                    
